@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Defines the Android build plugin version
+        classpath 'com.android.tools.build:gradle:8.1.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+android {
+    namespace 'com.example.settingsshortcut'
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.example.settingsshortcut"
+        minSdkVersion 21
+        targetSdkVersion 33
+    }
+}
